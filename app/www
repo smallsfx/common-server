@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+// console.log('╭─────────────────────────────────────╮');
+// console.log('│                                     │');
+// console.log('│   Update available 5.5.1 → 5.6.0    │');
+// console.log('│     Run npm i -g npm to update      │');
+// console.log('│                                     │');
+// console.log('╰─────────────────────────────────────╯');
+
+require('../lib/core/framework').start();
