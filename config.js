@@ -38,7 +38,7 @@ exports.config = {
   module: {
     ignore: ["clients"],
     app: {
-      public: "../nvlbs-carfriend/carfriend-webapp/src/main/webapp,../common-ui-port/", // 公共目录，默认为public
+      public: "../common-ui-port/,../nvlbs-basic/nvlbs-basic-webapp/src/main/webapp", // 公共目录，默认为public //../nvlbs-carfriend/carfriend-webapp/src/main/webapp,
       view: "views", // 视图目录，默认为views
       engine: "html", // 页面试图引擎，默认为html
       /** Session 相关设置 */
