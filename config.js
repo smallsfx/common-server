@@ -39,11 +39,7 @@ exports.config = {
     ignore: ["clients"],
     app: {
       site: [
-        { domain: 'nvlbs-basic', path: '../javaProjects/nvlbs-basic/nvlbs-basic-webapp/src/main/webapp' },
-        { domain: 'carfriend', path: '../javaProjects/nvlbs-carfriend/carfriend-webapp/src/main/webapp' },
-        { domain: 'peanutvr', path: '../javaProjects/gv-peanutvr/src/main/webapp' },
-        { domain: 'vue', path: '../qdp-vue-typescript/' },
-        { domain: 'iview', path: '../webProjects/iview-admin/' }
+        // { domain: 'ROOT', path: '../common-ui-port/' }
       ],
       public: "public,../common-ui-port/", // 公共目录，默认为public
       view: "views", // 视图目录，默认为views
