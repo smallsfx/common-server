@@ -2,8 +2,8 @@
 const rootPath = __dirname;
 /** 框架参数设置 */
 exports.config = {
-  name: "nvlbs framework",
-  version: "0.0.1",
+  name: "gvsoft framework",
+  version: "1.0.1",
   /** 是否自动加载数据库配置 */
   autoloadoption: true,
   /** 框架根目录 */
@@ -13,10 +13,13 @@ exports.config = {
     upload: "public/resource/avatar/", // 上传文件存放目录
     "request-handler": "lib/request-handlers", // request-handler 存放目录
     "server-handler": "lib/server-handlers", // server-handler 存放目录
-    controller: "lib/controllers", // controller 存放目录
-    typeextend: "lib/extends", // typeextends 存放目录
-    module: "lib/modules", // modules 存放目录
-    client: "lib/clients" // clients 存放目录
+    "controller": [
+      "lib/controllers",
+      "../common-controllers"
+    ], // controller 存放目录
+    "typeextend": "lib/extends", // typeextends 存放目录
+    "module": "lib/modules", // modules 存放目录
+    "client": "lib/clients" // clients 存放目录
   },
   /** 中间件参数设置 */
   middleware: {
@@ -40,6 +43,7 @@ exports.config = {
     app: {
       site: [
         // { domain: 'ROOT', path: '../common-ui-port/' }
+        { domain: 'peanut', path: '/Users/wangxin/workspace/peanut-vr/src/main/webapp' }
       ],
       public: "public,../common-ui-port/", // 公共目录，默认为public
       view: "views", // 视图目录，默认为views
